@@ -79,7 +79,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">311</span>
+            <span class="post-count">353</span>
         </span>
     </span>
 
@@ -111,8 +111,15 @@
 <p><img src="https://i.loli.net/2020/07/26/Mb5n7FyLTDUKRsd.png" alt="获取ID，Key"></p>
 <p>这时，我们需要在博客本地文件夹下找到<strong>theme</strong>下的<strong>_config.yml</strong>文件，在文件中按照如下形式填写APP ID和APP KEY。</p>
 <hr>
-<p><img src="https://i.loli.net/2020/07/26/fIMBwbaL3iZ57jV.png" alt="image.png"></p>
-<hr>
+<pre><code>leancloud:
+  enable: true
+  app_id: evFSxsRBD8jxHiBaV3jeD0zi-gzGzoHsz
+  app_key: vrqRfSLxoLjc6l3laNFKe2rk
+# Valine配置
+valine:
+  enable: true # 是否启用
+  avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
+  placeholder: 给我的文章加点评论吧~ # placeholder</code></pre><hr>
 <p>最后，我们只需要重新部署就可以在评论区畅所欲言啦。</p>
 <h3 id="评论数据管理评论数据管理"><a href="#评论数据管理评论数据管理" class="headerlink" title="评论数据管理评论数据管理"></a>评论数据管理评论数据管理</h3><p>由于Valine 是无后端评论系统，所以也就没有开发评论数据管理功能。请自行登录Leancloud应用管理。<br>具体步骤：登录&gt;选择你创建的应用&gt;存储&gt;选择Class Comment，然后就可以尽情的发挥你的权利啦(～￣▽￣)～</p>
 <hr>
